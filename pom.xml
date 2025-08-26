@@ -12,7 +12,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <allure.version>2.24.0</allure.version>
-        <aspectj.version>1.9.7</aspectj.version>
+        <aspectj.version>1.9.24</aspectj.version>
         <maven-surefire-plugin.version>3.0.0-M7</maven-surefire-plugin.version>
         <jackson.version>2.14.2</jackson.version>
     </properties>
@@ -37,7 +37,6 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-junit4</artifactId>
             <version>${allure.version}</version>
-            <scope>test</scope>
         </dependency>
 
         <dependency>
@@ -93,11 +92,11 @@
                     <dependency>
                         <groupId>org.aspectj</groupId>
                         <artifactId>aspectjweaver</artifactId>
-                        <version>${aspectj.version}</version>
+                        <version>1.9.24</version>
+                        <scope>runtime</scope>
                     </dependency>
                 </dependencies>
             </plugin>
-
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
